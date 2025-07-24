@@ -148,8 +148,12 @@ body {
 }
 
 .message-content img {
-  width: 400px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+  display: block;
 }
+
 
 
 
