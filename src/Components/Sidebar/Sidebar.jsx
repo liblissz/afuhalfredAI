@@ -80,14 +80,15 @@ const Sidebar = ({ isOpen, currentIndex, selectConversation, onToggleSidebar,con
       </div>
 
       <div className="settings">
+           <button onClick={toggleTheme}>
+          <i className={`fas ${isDark ? "fa-sun" : "fa-moon"}`}></i>
+          <span>{isDark ? "Light Mode" : "Dark Mode"}</span>
+        </button>
         <button onClick={clearHistory}>
           <i className="fas fa-trash"></i>
           <span>Clear History</span>
         </button>
-        <button onClick={toggleTheme}>
-          <i className={`fas ${isDark ? "fa-sun" : "fa-moon"}`}></i>
-          <span>{isDark ? "Light Mode" : "Dark Mode"}</span>
-        </button>
+     
       </div>
     </div>
   );
