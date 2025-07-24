@@ -1,0 +1,34 @@
+.ai-message {
+  white-space: pre-wrap; /* preserves line breaks */
+  text-align: left;       /* align text to left for readability */
+  line-height: 1.5em;     /* better line spacing */
+  padding: 10px;
+  font-size: 14px;
+  max-width: 80%;         /* controls message width */
+  word-wrap: break-word;  /* breaks long words */
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: styling for markdown elements */
+.ai-message h1,
+.ai-message h2,
+.ai-message h3,
+.ai-message h4,
+.ai-message h5,
+.ai-message h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: #a3d5ff;
+}
+
+.ai-message ul,
+.ai-message ol {
+  margin-left: 1.2em;
+  margin-bottom: 1em;
+}
+  
+.ai-message p {
+  margin-bottom: 1em;
+}

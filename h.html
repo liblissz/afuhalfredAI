@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine Catalog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      display: block;
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .details {
+      padding: 12px;
+    }
+    .details h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: #34495e;
+    }
+    .details p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .details .price {
+      color: #27ae60;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Medicine Catalog</h1>
+  <div class="grid">
+    <!-- 1 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=1" alt="Paracetamol 500mg">
+      <div class="details">
+        <h3>Paracetamol 500 mg</h3>
+        <p>Category: Pain Relief</p>
+        <p>Batch No: PA-00123</p>
+        <p class="price">2 000 FCFA</p>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=2" alt="Amoxicillin 500mg">
+      <div class="details">
+        <h3>Amoxicillin 500 mg</h3>
+        <p>Category: Antibiotic</p>
+        <p>Batch No: AMX-45678</p>
+        <p class="price">3 500 FCFA</p>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=3" alt="Ibuprofen 200mg">
+      <div class="details">
+        <h3>Ibuprofen 200 mg</h3>
+        <p>Category: Anti‑inflammatory</p>
+        <p>Batch No: IBU-11223</p>
+        <p class="price">1 800 FCFA</p>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=4" alt="Vitamin C 1000mg">
+      <div class="details">
+        <h3>Vitamin C 1000 mg</h3>
+        <p>Category: Supplement</p>
+        <p>Batch No: VC-33445</p>
+        <p class="price">2 200 FCFA</p>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=5" alt="Loratadine 10mg">
+      <div class="details">
+        <h3>Loratadine 10 mg</h3>
+        <p>Category: Allergy</p>
+        <p>Batch No: LOR-55667</p>
+        <p class="price">1 300 FCFA</p>
+      </div>
+    </div>
+    <!-- 6 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=6" alt="Metformin 500mg">
+      <div class="details">
+        <h3>Metformin 500 mg</h3>
+        <p>Category: Diabetes</p>
+        <p>Batch No: MET-77889</p>
+        <p class="price">2 800 FCFA</p>
+      </div>
+    </div>
+    <!-- 7 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=7" alt="Azithromycin 250mg">
+      <div class="details">
+        <h3>Azithromycin 250 mg</h3>
+        <p>Category: Antibiotic</p>
+        <p>Batch No: AZI-99001</p>
+        <p class="price">3 200 FCFA</p>
+      </div>
+    </div>
+    <!-- 8 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=8" alt="Cough Syrup 100ml">
+      <div class="details">
+        <h3>Cough Syrup 100 ml</h3>
+        <p>Category: Cold & Flu</p>
+        <p>Batch No: CS-22334</p>
+        <p class="price">1 600 FCFA</p>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=9" alt="Omeprazole 20mg">
+      <div class="details">
+        <h3>Omeprazole 20 mg</h3>
+        <p>Category: Antacid</p>
+        <p>Batch No: OME-44556</p>
+        <p class="price">1 700 FCFA</p>
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=10" alt="Naproxen 250mg">
+      <div class="details">
+        <h3>Naproxen 250 mg</h3>
+        <p>Category: Pain Relief</p>
+        <p>Batch No: NAP-66778</p>
+        <p class="price">1 900 FCFA</p>
+      </div>
+    </div>
+    <!-- 11 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=11" alt="Calcium Tablets">
+      <div class="details">
+        <h3>Calcium Tablets</h3>
+        <p>Category: Supplement</p>
+        <p>Batch No: CAL-88990</p>
+        <p class="price">1 500 FCFA</p>
+      </div>
+    </div>
+    <!-- 12 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=12" alt="Diclofenac 50mg">
+      <div class="details">
+        <h3>Diclofenac 50 mg</h3>
+        <p>Category: Anti‑inflammatory</p>
+        <p>Batch No: DIC-11223</p>
+        <p class="price">2 100 FCFA</p>
+      </div>
+    </div>
+    <!-- 13 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=13" alt="Ranitidine 150mg">
+      <div class="details">
+        <h3>Ranitidine 150 mg</h3>
+        <p>Category: Digestive</p>
+        <p>Batch No: RAN-33445</p>
+        <p class="price">1 400 FCFA</p>
+      </div>
+    </div>
+    <!-- 14 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=14" alt="Chlorpheniramine 4mg">
+      <div class="details">
+        <h3>Chlorpheniramine 4 mg</h3>
+        <p>Category: Allergy</p>
+        <p>Batch No: CHL-55667</p>
+        <p class="price">1 600 FCFA</p>
+      </div>
+    </div>
+    <!-- 15 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=15" alt="Folic Acid 5mg">
+      <div class="details">
+        <h3>Folic Acid 5 mg</h3>
+        <p>Category: Vitamin</p>
+        <p>Batch No: FOL-77889</p>
+        <p class="price">1 200 FCFA</p>
+      </div>
+    </div>
+    <!-- 16 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=16" alt="Insulin 100IU">
+      <div class="details">
+        <h3>Insulin 100 IU</h3>
+        <p>Category: Diabetes</p>
+        <p>Batch No: INS-99001</p>
+        <p class="price">6 000 FCFA</p>
+      </div>
+    </div>
+    <!-- 17 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=17" alt="Ciprofloxacin 500mg">
+      <div class="details">
+        <h3>Ciprofloxacin 500 mg</h3>
+        <p>Category: Antibiotic</p>
+        <p>Batch No: CIP-22334</p>
+        <p class="price">3 300 FCFA</p>
+      </div>
+    </div>
+    <!-- 18 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=18" alt="Hydroxychloroquine 200mg">
+      <div class="details">
+        <h3>Hydroxychloroquine 200 mg</h3>
+        <p>Category: Antimalarial</p>
+        <p>Batch No: HYD-44556</p>
+        <p class="price">2 700 FCFA</p>
+      </div>
+    </div>
+    <!-- 19 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=19" alt="Salbutamol Inhaler">
+      <div class="details">
+        <h3>Salbutamol Inhaler</h3>
+        <p>Category: Asthma</p>
+        <p>Batch No: SAL-66778</p>
+        <p class="price">4 200 FCFA</p>
+      </div>
+    </div>
+    <!-- 20 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=20" alt="Prednisone 10mg">
+      <div class="details">
+        <h3>Prednisone 10 mg</h3>
+        <p>Category: Steroid</p>
+        <p>Batch No: PRE-88990</p>
+        <p class="price">3 100 FCFA</p>
+      </div>
+    </div>
+    <!-- 21 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=21" alt="Warfarin 5mg">
+      <div class="details">
+        <h3>Warfarin 5 mg</h3>
+        <p>Category: Anticoagulant</p>
+        <p>Batch No: WAR-11223</p>
+        <p class="price">4 500 FCFA</p>
+      </div>
+    </div>
+    <!-- 22 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=22" alt="Levothyroxine 50mcg">
+      <div class="details">
+        <h3>Levothyroxine 50 µg</h3>
+        <p>Category: Thyroid</p>
+        <p>Batch No: LEV-33445</p>
+        <p class="price">2 900 FCFA</p>
+      </div>
+    </div>
+    <!-- 23 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=23" alt="Omeprazole 40mg">
+      <div class="details">
+        <h3>Omeprazole 40 mg</h3>
+        <p>Category: Antacid</p>
+        <p>Batch No: OME-55667</p>
+        <p class="price">1 800 FCFA</p>
+      </div>
+    </div>
+    <!-- 24 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=24" alt="Clindamycin 300mg">
+      <div class="details">
+        <h3>Clindamycin 300 mg</h3>
+        <p>Category: Antibiotic</p>
+        <p>Batch No: CLI-77889</p>
+        <p class="price">3 400 FCFA</p>
+      </div>
+    </div>
+    <!-- 25 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=25" alt="Cetirizine 10mg">
+      <div class="details">
+        <h3>Cetirizine 10 mg</h3>
+        <p>Category: Allergy</p>
+        <p>Batch No: CET-99001</p>
+        <p class="price">1 350 FCFA</p>
+      </div>
+    </div>
+    <!-- 26 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=26" alt="Doxycycline 100mg">
+      <div class="details">
+        <h3>Doxycycline 100 mg</h3>
+        <p>Category: Antibiotic</p>
+        <p>Batch No: DOX-22334</p>
+        <p class="price">2 800 FCFA</p>
+      </div>
+    </div>
+    <!-- 27 -->
+    <div class="card"> 
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=27" alt="Gabapentin 300mg">
+      <div class="details">
+        <h3>Gabapentin 300 mg</h3>
+        <p>Category: Neuropathic Pain</p>
+        <p>Batch No: GABA-44556</p>
+        <p class="price">3 600 FCFA</p>
+      </div>
+    </div>
+    <!-- 28 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=28" alt="Simvastatin 20mg">
+      <div class="details">
+        <h3>Simvastatin 20 mg</h3>
+        <p>Category: Cholesterol</p>
+        <p>Batch No: SIM-66778</p>
+        <p class="price">1 950 FCFA</p>
+      </div>
+    </div>
+    <!-- 29 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=29" alt="Fluconazole 150mg">
+      <div class="details">
+        <h3>Fluconazole 150 mg</h3>
+        <p>Category: Antifungal</p>
+        <p>Batch No: FLU-88990</p>
+        <p class="price">2 300 FCFA</p>
+      </div>
+    </div>
+    <!-- 30 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/collection/928423/400x300?sig=30" alt="Clonazepam 0.5mg">
+      <div class="details">
+        <h3>Clonazepam 0.5 mg</h3>
+        <p>Category: Antiepileptic</p>
+        <p>Batch No: CLO-11223</p>
+        <p class="price">3 700 FCFA</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
