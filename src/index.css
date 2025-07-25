@@ -7,7 +7,7 @@
   --background-secondary: #f5f7fb;
   --background-tertiary: #edf0f7;
   --message-content-bg: #f0f4ff;
-  --user-message-bg: orange;
+  --user-message-bg: green;
   --user-message-text: #fff;
   --border-color: #e0e0e0;
   --shadow-color: rgba(0, 0, 0, 0.1);
@@ -95,7 +95,7 @@ body {
 }
 
 .code-copy-button.copied {
-  background-color: #4caf50;
+  background-color: #1d461e;
   color: white;
 }
 .chat-container {
@@ -118,7 +118,7 @@ body {
   font-size: 14px;
   max-width: 80%;
   width:500px !important;  
-  background-color: #7a9be8;       /* controls message width */
+  background-color: #0c2f80;       /* controls message width */
   word-wrap: break-word;  /* breaks long words */
   color: #eee !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -134,7 +134,7 @@ body {
   margin-top: 1em;
   margin-bottom: 0.5em;
   font-weight: 700;
-  color: #a3d5ff;
+  color: #364c5e;
 }
 
 .message-content ul,
