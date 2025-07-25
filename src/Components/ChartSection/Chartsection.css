@@ -54,7 +54,7 @@
 }
 
 .message.user .message-content {
-  background-color: #7fdbca !important;
+  background-color: #2e5e55 !important;
   color: var(--user-message-text);
   border-radius: var(--border-radius);
 }
